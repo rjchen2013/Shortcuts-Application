@@ -1,0 +1,14 @@
+{% if shortcut_list %}
+  <table border="1" style="width:100%">
+    <tr>
+      <th>Shortcut Commands</th>
+      <th>Shortcut Descriptions</th>
+    </tr>
+    {% for shortcut in shortcut_list %}
+      <tr>
+        <td>{{ shortcut.shortcut_cmd }}</td>
+        <td>{{ shortcut.shortcut_desc }}</td>
+      </tr>
+    {% endfor %}
+  </table>
+{% endif %}
